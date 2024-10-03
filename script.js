@@ -50,6 +50,14 @@ const handleTransitionEnd = () => {
   }
 };
 
+/**
+ * 특정 함수가 지정된 시간 내에 여러 번 호출되는 것을 방지하는 함수입니다.
+ * 버튼 클릭을 빠르게 눌러도 이벤트는 한번만 호출되도록 작동됩니다.
+ *
+ * @param {Function} cb - 콜백 함수.
+ * @param {number} limit - 함수 호출제한 시간 간격(ms).
+ */
+
 const throttle = (cb, limit) => {
   let inThrottle;
   return function () {
