@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>WAIKER - fe_test_jhj</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+  </head>
+
+  <body>
+    <div class="slide-wrapper">
+      <div class="slides">
+        <div class="section1 slide">
+          <img src="./assets/Logotype_Black.png" alt="slide-img" />
+        </div>
+        <div class="section2 slide">
+          <img src="./assets/Logotype_Green.png" alt="slide-img" />
+        </div>
+        <div class="section3 slide">
+          <img src="./assets/Symbol_Black.png" alt="slide-img" />
+        </div>
+        <div class="section4 slide">
+          <img src="./assets/Symbol_Green.png" alt="slide-img" />
+        </div>
+        <div class="section5 slide">
+          <img src="./assets/Primary logo_Black.png" alt="slide-img" />
+        </div>
+      </div>
+    </div>
+
+    <ul class="indicator">
+      <li class="act"><a>•</a></li>
+      <li><a>•</a></li>
+      <li><a>•</a></li>
+      <li><a>•</a></li>
+      <li><a>•</a></li>
+    </ul>
+
+    <div class="controller-wrapper">
+      <label for="slide-speed">Slide Speed (ms):</label>
+      <input type="number" id="slide-speed" class="slide-speed" value="500" />
+      <label for="slide-interval">Slide Interval (ms):</label>
+      <input
+        type="number"
+        id="slide-interval"
+        class="slide-interval"
+        value="3000"
+      />
+
+      <button class="auto-slide-controller">pause</button>
+    </div>
+
+    <button class="arrow prev"><i class="fas fa-chevron-left"></i></button>
+    <button class="arrow next"><i class="fas fa-chevron-right"></i></button>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
